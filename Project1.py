@@ -1,13 +1,25 @@
 import heapq
 import math
 #0 represents the blank space
-#You can access elements using:
-#index = row * 3 + col
-#row = index // 3
-#col = index % 3
 
-Initial_State = [1,0,2,3,4,5,6,7,8]
-Goal_State = [1,2,3,4,5,6,7,8,0]
+
+Initial_State = [
+                 [1,0,2],
+                 [3,4,5],
+                 [6,7,8]
+                ]
+
+Goal_State =   [
+                 [1,2,3],
+                 [4,5,6],
+                 [7,8,0]
+                ] 
+
+
+
+
+
+
 
 print("Welcome to 862302395 & 862489124 8-puzzle solver!")
 print("Type \"1\" to solve the puzzle, or \"2\" to enter your own puzzle.")
@@ -16,9 +28,9 @@ choice = int(input("Enter your choice: "))
 
 if choice == 1:
     print("You have been given the default puzzle")
-    print("1 2 3")
-    print("4 5 6")
-    print("7 8 0")
+    print("1 0 2")
+    print("3 4 5")
+    print("6 7 8")
 elif choice == 2:
     print("Enter your puzzle, use a zero to represent the blank")
 
